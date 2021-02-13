@@ -9,8 +9,8 @@
 
 void StoreStateToEEPROM(int channel);
 
-const char ssid[] = "MikroTik-A29991";
-const char pass[] = "karsticeburekai";
+const char ssid[] = "ssid";
+const char pass[] = "pass";
 
 WiFiClient net;
 MQTTClient client;
