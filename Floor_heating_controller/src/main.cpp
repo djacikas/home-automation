@@ -36,9 +36,9 @@ MQTTClient client;
 const char mqttBrokerAddress[13] = "192.168.88.5";
 String mqttTopicFloorHeatingController = "/myhome/devices/floorheatingcontroller";
 
-#define RELAY_ON 1
-#define RELAY_OFF 0
 #define CHANNELS 4
+#define RELAY_ON 0 //For not inverted relay use 1
+#define RELAY_OFF 1 //For not inverted relay use 0
 
 Bounce * relays = new Bounce[CHANNELS];
 int relayPins[CHANNELS]  = {4, 14, 12, 13}; //D2, D5, D6, D7
